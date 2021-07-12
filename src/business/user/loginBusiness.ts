@@ -1,7 +1,7 @@
-import connection from '../data/BaseDatabase';
-import {compare} from '../services/hashManager';
-import {loginRequestDTO, loginResponseDTO, User} from '../model/User';
-import { generateToken } from '../services/generateToken';
+import connection from '../../data/BaseDatabase';
+import {compare} from '../../services/hashManager';
+import {loginRequestDTO, loginResponseDTO, User} from '../../model/User';
+import { generateToken } from '../../services/generateToken';
 
 export default async function loginBusiness(userRequestData: loginRequestDTO): Promise<loginResponseDTO>{
 

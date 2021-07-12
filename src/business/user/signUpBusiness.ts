@@ -1,8 +1,8 @@
-import {generateId} from '../services/idGenerate';
-import connection from '../data/BaseDatabase';
-import {generateToken} from '../services/generateToken';
-import {hash} from '../services/hashManager';
-import {signUpRequestDTO, signUpResponseDTO, User} from '../model/User';
+import {generateId} from '../../services/idGenerate';
+import connection from '../../data/BaseDatabase';
+import {generateToken} from '../../services/generateToken';
+import {hash} from '../../services/hashManager';
+import {signUpRequestDTO, signUpResponseDTO, User} from '../../model/User';
 
 export default async function signUpBusiness(userRequestData: signUpRequestDTO): Promise<signUpResponseDTO>{
   if (

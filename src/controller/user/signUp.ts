@@ -1,5 +1,5 @@
 import {Request, Response} from "express";
-import signUpBusiness from "../business/signUpBusiness";
+import signUpBusiness from "../../business/user/signUpBusiness";
 
 export default async function signUp(req: Request, res:Response): Promise<void> {
 	 try {
