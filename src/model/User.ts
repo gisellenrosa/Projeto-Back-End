@@ -3,14 +3,16 @@ export type User = {
   name: string,  
   email: string, 
   nickname: string, 
-  password: string
+  password: string,
+  avatar?:string
 }
 
 export interface signUpRequestDTO {
   name: any,
   email: any, 
   nickname: any,
-  password:any
+  password:any,
+  avatar?:string
 }
 
 export interface signUpResponseDTO {

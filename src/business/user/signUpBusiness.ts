@@ -39,6 +39,7 @@ export default async function signUpBusiness(userRequestData: signUpRequestDTO):
     email: userRequestData.email,
     nickname: userRequestData.nickname,
     password: cypherPassword,
+    avatar:userRequestData.avatar
   };
   const token = generateToken({ id: user.id });
 

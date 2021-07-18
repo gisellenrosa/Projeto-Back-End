@@ -3,9 +3,9 @@ import signUpBusiness from "../../business/user/signUpBusiness";
 
 export default async function signUp(req: Request, res:Response): Promise<void> {
 	 try {
-		const {name, email, nickname, password} = req.body
+		const {name, email, nickname, password, avatar} = req.body
 		const response = await signUpBusiness({
-			name, email, nickname, password 
+			name, email, nickname, password, avatar
 		})
 		res.status(201).send({
 			message: "Usuário criado!",

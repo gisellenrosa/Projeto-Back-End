@@ -1,6 +1,9 @@
 import {Router} from "express";
-import signUp from "../controller/photo/CreatePhoto";
+import createPhoto from "../controller/photo/createPhoto";
+import getPhotos from "../controller/photo/getPhotos";
+
 
 export const photoRouter = Router();
 
-userRouter.post("/signup", createPhoto)
+photoRouter.post("/create", createPhoto)
+photoRouter.get("/getall", getPhotos)
